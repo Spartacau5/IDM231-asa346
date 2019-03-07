@@ -1,0 +1,367 @@
+*{
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	color:white ;
+    font-family: 'Papyrus' ,fantasy; 
+	font-size: 100%;
+	height: 100%;
+	width: 100%;
+}
+img{
+	display: block;
+}
+
+h1 {
+    color: white;
+}
+body{
+  background-color:#000;
+  width: 100%;
+  height: auto;
+}
+
+section#title{
+	margin: 5vh 0 30px 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+    z-index: 15;
+}
+
+i{
+	padding: 0;
+}
+
+i:hover{
+	color: white;
+}
+
+.center{
+    text-align: center;
+    color: red;
+	position: relative;
+}
+.bg{
+  z-index: -10;
+  display: inline-block;
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-image:url(http://78.media.tumblr.com/9951ca2e7e884a48ca5b5269f5514cd6/tumblr_nwjrkxWOcd1tslewgo1_500.gif);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  filter:blur(2px);
+}
+.logo{
+	border-radius: 15px;
+	height: 100%;
+	margin: 10px auto;
+	max-height: 120px;
+	position: center;
+	text-align: center;
+    width: auto;
+    border: 2px solid red;
+    box-shadow: 0 0 11px red;
+}
+#help{
+	border: none;
+	font-size: 1.75rem;
+	float: left;
+	left: 0;
+	margin: 10px;
+	position: fixed;
+	top: 0;
+	width: auto;
+    z-index: 10;
+}
+
+.volume{
+	border: none;
+	font-size: 2rem !important;
+	float: right;
+	right: 10px;
+	margin: 10px;
+	position: fixed;
+	top: 0;
+	width: auto;
+    z-index: 10;
+}
+
+#volUp{
+	display: none;
+}
+button{
+	border: 2px solid red;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	margin: 10px 0 0 0;
+	min-width: 100px;
+	padding: 10px;
+    width: 10%;
+    transition: box-shadow .3s;
+}
+
+button:hover{
+    border: 2px solid red;
+    box-shadow: 0 0 11px red;
+}
+button:focus {
+    border: 2px solid red;
+    box-shadow: 0 0 11px red;
+    color: black;
+    background-color: red;
+}
+
+#BirthdayInput{
+	margin: 0px auto 0 auto;
+	text-align: center;
+    width: 100%;
+}
+
+input{
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+	min-width: 100px;
+	padding: 10px;
+	position: relative;
+	text-align: center;
+    width: 15%;
+    margin: 10px 25px;
+    font-family: 'Papyrus', fantasy;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+#inputs{
+	width: 100%;
+}
+#leadersContainer{
+    margin: 0;
+    text-align: center;
+}
+#submitButton {
+    font-family: 'Papyrus', fantasy;
+}
+
+.leader{
+/*border: solid 1px black;*/
+	cursor: pointer;
+	display: inline-block;
+	/*display: none;*/
+	height: 15vh;
+	margin: 20px 0;
+	min-height: 100px;
+    width: 15%;
+}
+
+.leaderPic{
+	height: 15vh;
+	margin: auto;
+	min-height: 100px;
+    position: relative;
+	text-align: center;
+	transform: none;
+	transition: transform .25s ease-in-out;
+	width: auto;
+}
+
+.leaderPic:hover{
+	transform: scale(1.2);
+    transition: transform .25s ease-in-out;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+}
+.card{
+	background-color:white;
+	background-position: center;
+	background-size: cover;
+	background-attachment: local;
+	box-shadow: 0px 0px 60px 4px red;
+	display: none;
+	margin: 0 25vw;
+	max-height: 90vh;
+	overflow-y: auto;
+	position: fixed;
+	top: 7vh;
+	width: 50vw;
+    z-index: 100;
+}
+.sign{
+	font-size: 2.75rem;
+	margin: 20px;
+}
+
+.leaderName{
+	margin: 10px auto;
+	position: relative;
+	text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.birthday{
+	color: #4C4C4C;
+	font-size: .8rem;
+	font-weight: lighter;
+	margin: 0 auto;
+	padding: 5px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+
+.bio{
+	color: #060606;
+	font-size: 1rem;
+	font-weight: lighter;
+	line-height: 1.5;
+	padding: 20px 10%;
+	position: relative;
+	animation: none;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+}
+
+.profileImage{
+	border-radius: 15px;
+	height: 100%;
+	margin: 0 auto;
+	max-height: 200px;
+	position: relative;
+	text-align: center;
+    width: auto;
+}
+.card h1 {
+    color: black;
+    text-align: center;
+}
+.card h4{
+    font-size: .85rem;
+	margin: 0 auto;
+	opacity: 1;
+	padding: 0 0 50px 0;
+	text-align: center;
+	width: 100%;
+	animation: none;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+}
+
+.card a{
+	opacity: 1;
+	animation: none;
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+}
+
+.paper{
+	display: inline-block;
+	left: 0;
+	position: fixed;
+	object-fit: cover;
+	object-position: center;
+	top: 0;
+	z-index: -15;
+}
+
+#noMatchCard .bio{
+	text-align: center;
+}
+
+#shade{
+	background-color: black;
+	cursor: pointer;
+	display: none;
+	height: 100vh;
+	left: 0;
+	opacity: .5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 50;
+}
+
+.cardFadeIn{
+	animation: fadeIn .5s linear forwards;
+	-webkit-animation: fadeIn .5s linear forwards;
+	-moz-animation: fadeIn .5s linear forwards;
+	-o-animation: fadeIn .5s linear forwards;
+}
+
+.cardFadeOut{
+	animation: fadeOut .5s linear forwards;
+	-webkit-animation: fadeOut .5s linear forwards;
+	-moz-animation: fadeOut .5s linear forwards;
+	-o-animation: fadeOut .5s linear forwards;
+}
+
+.head:hover{
+	stroke: white;
+	stroke-width: 2px;
+}
+
+#x{
+	color: white;
+	display: none;
+	font-size: 2rem;
+	padding: 15px 20px 0 0;
+	pointer-events: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 51;
+}
+
+.volume{
+	border: none;
+	font-size: 2rem !important;
+	float: right;
+	right: 10px;
+	margin: 10px;
+	position: fixed;
+	top: 0;
+	width: auto;
+	z-index: 10;
+}
+
+#volUp{
+	display: none;
+}
+
+@media screen and (max-width: 700px){
+	.leader{
+		width: 33%;
+	}
+
+	.card{
+		margin: 0 10vw;
+		width: 80vw
+	}
+
+	#help{
+		font-size: 2.25rem;
+	}
+
+	.volume{
+		font-size: 2.25rem !important;
+	}
+}

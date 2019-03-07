@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Olympian Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="projectolympian.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="title"  style="position: static">
+        <div class="center" style="left: 0px;">
+            <img src="Images/Logos/mainlogo.png" alt="logo" class="logo">
+            <h1> Which Olympian are you? </h1>
+            <h3>See which Greek God best represents you from your birth date!</h3>
+            <i id="help" class="leader fa fa-question-circle" aria-hidden="true"></i>
+            <i class="volume fa fa-volume-off" aria-hidden="true" id="volDown" style="display: none;"></i>
+            <i class="volume fa fa-volume-up" aria-hidden="true" id="volUp" style="display: block;"></i>
+            <h4>Enter your birthday:</h4>
+            <div id="BirthdayInput">
+                <div id="inputs">
+                    <input id="month" type="number" name="month" placeholder="month" label="month" required="">
+                    <input id="day" type="number" name="day" placeholder="day" label="day" required="">
+                </div>
+                <button id="submitButton">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section id="cardContainer">
+        <div id="ariesCard" class="card" style="display: none;">
+            <h1 class="sign">Aries</h1>
+            <img class="profileImage" src="Images/Logos/Athena.png" alt="Logo for Athena">
+            <h2 class="leaderName">Athena </h2>
+            <h2 class="birthday">Goddess of Wisdom</h2>
+            <h3 class="bio">You are Athena! The Goddess of Wisdom. Aries in particular are associated with the fire of the mind, raw creativity and thought amongst traits like leadership,
+             strategy and courage, all traits intrinsic to Athena in her myths.</h3>
+            <audio id="ariesSound" src="Sounds/Athena.mp3"></audio>
+        </div>
+        <div id="taurusCard" class="card" style="display: none;">
+            <h1 class="sign">Taurus</h1>
+            <img class="profileImage" src="Images/Logos/Aphrodite.png" alt="Picture of Aphrodite">
+            <h2 class="leaderName">Aphrodite</h2>
+            <h2 class="birthday">Goddess of Love</h2>
+            <h3 class="bio">You are Aphrodite! The Goddess of Love. Both Aphrodite and the Taurus sign are closely tied to the earthly attribute of harmony, being associated with nurture,
+            faith, loyalty, friendship, love and sensuality.</h3>
+            <audio id="taurusSound" src="Sounds/Aphrodite.mp3"></audio>
+        </div>
+        <div id="geminiCard" class="card" style="display: none;">
+            <h1 class="sign">Gemini</h1>
+            <img class="profileImage" src="Images/Logos/Apollo.png" alt="Picture of Apollo">
+            <h2 class="leaderName">Apollo</h2>
+            <h2 class="birthday">God of the Sun</h2>
+            <h3 class="bio">You are Apollo! Apollo is both a god highly loved and highly feared, the light bearer who is just as likely to help you as well as
+            utterly destroy you, and even do both, given his role as the purifier. Gemini thus bears a similar role to the Day rune:
+            it is a symbol of the inherent duality present in light.</h3>
+            <audio id="geminiSound" src="Sounds/Apollo.mp3"></audio>
+        </div>
+        <div id="cancerCard" class="card" style="display: none;">
+            <h1 class="sign">Cancer</h1>
+            <img class="profileImage" src="Images/Logos/Hermes.png" alt="Picture of Hermes">
+            <h2 class="leaderName">Hermes</h2>
+            <h2 class="birthday">Messenger of the Gods | God of Travel </h2>
+            <h3 class="bio">You are Hermes! The sign of Cancer can be more or less described as the most protective of all signs. It is defined by strong emotions,
+            particularly empathy, love, and a healthy passion for defense, both of the self and others. Hermes, suffice to say, is among the Olympians one of the closest to mankind, being the
+            friend, protector, guardian and guide.</h3>
+            <audio id="cancerSound" src="Sounds/Hermes.mp3"></audio>
+        </div>
+        <div id="leoCard" class="card">
+            <h1 class="sign">Leo</h1>
+            <img class="profileImage" src="Images/Logos/Zeus.png" alt="Picture of Zeus">
+            <h2 class="leaderName">Zeus</h2>
+            <h2 class="birthday">King of the Gods | God of the Sky </h2>
+            <h3 class="bio">You are Zeus! As the King of the gods, Zeus‘ connection with Leo is appropriate as it is the “king of the Zodiac signs”.
+            </h3>
+            <audio id="leoSound" src="Sounds/Zeus.mp3"></audio>
+        </div>
+        <div id="virgoCard" class="card" style="display: none;">
+            <h1 class="sign">Virgo</h1>
+            <img class="profileImage" src="Images/Logos/Demeter.png" alt="Picture of Demeter">
+            <h2 class="leaderName">Demeter</h2>
+            <h2 class="birthday">Goddess of Nature </h2>
+            <h3 class="bio">Tou are Demeter! Virgo's are frequently associated with practicality, critical analysis, 
+                skepticism, structure and perfectionism, traits not associated with Demeter. However, Demeter embodies the Virgo trait of duty,
+                 often at the expense of others but nonetheless well intentioned.</h3>
+            <audio id="virgoSound" src="Sounds/Demeter.mp3"></audio>
+        </div>
+        <div id="libraCard" class="card" style="display: none;">
+            <h1 class="sign">Libra</h1>
+            <img class="profileImage" src="Images/Logos/Hephaestus.png" alt="Picture of Hephaestus">
+            <h2 class="leaderName">Hephaestus</h2>
+            <h2 class="birthday">God of Fire </h2>
+            <h3 class="bio">You are Hephaestus! God of Fire.As previously discussed, Hephaestus‘ 
+                correspondence with Libra is derived from his role as the smith god. As just, Hephaestus is a god of innovation, 
+                taming the chaos of the flames to produce items to impose civilization, much like the drive behind a Libra. </h3>
+            <audio id="libraSound" src="Sounds/Hephaestus.mp3"></audio>
+        </div>
+        <div id="scorpioCard" class="card" style="display: none;">
+            <h1 class="sign">Scorpio</h1>
+            <img class="profileImage" src="Images/Logos/Ares.png" alt="Picture of Ares">
+            <h2 class="leaderName">Ares</h2>
+            <h2 class="birthday">God of War</h2>
+            <h3 class="bio">You are Ares! Scorpio is the second Mars sign, and the one that most relates to Ares: while the fiery aspects of Aries might relate to
+            him to some extent, it’s the more emotional Scorpio that resonates closer to him and his primal nature. </h3>
+            <audio id="scorpioSound" src="Sounds/Ares.mp3"></audio>
+        </div>
+        <div id="sagittariusCard" class="card" style="display: none;">
+            <h1 class="sign">Sagittarius</h1>
+            <img class="profileImage" src="Images/Logos/Hades.png" alt="Picture of Hades">
+            <h2 class="leaderName">Hades</h2>
+            <h2 class="birthday">God of Death</h2>
+            <h3 class="bio">You are Hades! The God of Death. As the first winter sign, Sagittarius bear a stoic personality. Hades is a god of power,
+                 consuming the darkness and destroying those who offend him.</h3>
+            <audio id="sagittariusSound" src="Sounds/Hades.mp3"></audio>
+        </div>
+        <div id="capricornCard" class="card" style="display: none;">
+            <h1 class="sign">Capricorn</h1>
+            <img class="profileImage" src="Images/Logos/Dionysius.png" alt="Picture of Dionysius">
+            <h2 class="leaderName">Dionysius</h2>
+            <h2 class="birthday">God of Wine</h2>
+            <h3 class="bio">You are Dionysius! The God of Ecstacy and Madness. Dionysius', like Capricorns, stressed order, stability and stoicness. More so, 
+            he took theses traits further and is a god associated with
+            hard work, and stubbornness.
+            </h3>
+            <audio id="capricornSound" src="Sounds/Dionysius.mp3"></audio>
+        </div>
+        <div id="aquariusCard" class="card">
+            <h1 class="sign">Aquarius</h1>
+            <img class="profileImage" src="Images/Logos/Hera.png" alt="Picture of Hera">
+            <h2 class="leaderName">Hera</h2>
+            <h2 class="birthday">Queen of the Gods</h2>
+            <h3 class="bio">You are Hera! The Queen Mother of the Gods. Hera is described as taking the sign of Aquarius due to her opposition to her husband.
+            Leo is the leader, the king, while Aquarius is associated with intellectual drives and understanding. Both are necessary for stability and peace to
+            prosper via righteousness and understanding.Both are also associated with personal pride, with Leo being the more emotional narcissism while Aquarius is a more
+            detached vanity.
+            </h3>
+            <audio id="aquariusSound" src="Sounds/Hera.mp3"></audio>
+        </div>
+        <div id="piscesCard" class="card" style="display: none;">
+            <h1 class="sign">Pisces</h1>
+            <img class="profileImage" src="Images/Logos/Poseidon.png" alt="Picture of Poseidon">
+            <h2 class="leaderName">Poseidon</h2>
+            <h2 class="birthday">God of the Sea</h2>
+            <h3 class="bio">You are Poseidon! Pisces is also associated with dreams and the subconscious, which relate to Poseidon’s primal, impulsive nature.
+                Pisces correlates with selflessness and charity, representing Poseidon’s less wrathful and 
+                more fertile aspects.</h3>
+            <audio id="piscesSound" src="Sounds/Poseidon.mp3"></audio>
+        </div>
+        <div id="noMatchCard" class="card">
+            <h1 class="sign">No Match!</h1>
+            <img class="profileImage" src="Images/Logos/mainlogo.png" alt="Picture of Omega">
+            <h3 class="bio">Try entering a valid date!</h3>
+            <audio id="noMatchSound" src="sounds/noMatch.mp3"></audio>
+        </div>
+        <div id="helpCard" class="card" style="display: none;">
+            <h1 class="sign">Directions:</h1>
+            <h3 class="bio">Enter your birth date into the boxes, then hit submit! Your Olympian God based on your Zodiac Sign will be displayed.
+                 Click the grey around that box to close it. Feel free to click any other
+                pictures below to see all the Signs and their Gods. </h3>
+            <audio id="helpSound" src="sounds/help.mp3"></audio>
+        </div>
+    </section>
+    <section id="randomAssets">
+        <div class="bg" id="bg1"></div>
+        <div class="bg" id="bg2"></div>
+        <div id="entryBackground"></div>
+        <audio id="backgroundMusic" src="Sounds/IntroMusic.mp3" loop=""></audio>
+        <h1 id="x" style="display: none;">x</h1>
+        <div id="shade" style="display: none;"></div>
+    </section>
+    <script type="text/javascript" src="projectolympian.js"></script>
+</body>
+<div class="bg">
+</div>
+</html>
